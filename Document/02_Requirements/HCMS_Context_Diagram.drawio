@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram id="HCMS-Context-Diagram-001" name="HCMS Context Diagram">
+        <mxGraphModel dx="796" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Context Diagram - UML" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontWeight=bold;fillColor=#0f172a;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="15" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="systemBoundary" value="HCMS&#10;Healthcare Clinic Management System&#10;(Pediatrics MVP - 5 Entity System)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0369a1;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="292" y="127" width="168" height="108" as="geometry"/>
+                </mxCell>
+                <mxCell id="sysDesc" value="Core Entities:&#10;• PATIENT&#10;• APPOINTMENT&#10;• VISIT&#10;• PRESCRIPTION&#10;• BILLING" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=5;spacingTop=5;fontSize=10;" parent="systemBoundary" vertex="1">
+                    <mxGeometry x="8" y="45" width="150" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="footer" value="MVP: 5 Entities | Cash Only" style="text;html=1;align=center;fontSize=9;fillColor=#64748b;" parent="1" vertex="1">
+                    <mxGeometry y="280" width="600" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" value="LEGEND&#10;=========&#10;• Actors: External users&#10;• Use Cases: System interfaces&#10;&#10;SCOPE:&#10;✓ Booking, EMR, Cash billing&#10;✗ No insurance/pharmacy" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#f59e0b;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="250" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="parentActor" value="Parent&#10;(Phụ Huynh)" style="shape=umlLollipop;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="15" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="parentEdge" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="parentActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="parentUC" value="Book Appointment" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=none;rounded=1;" parent="1" source="parentEdge" target="parentEdge" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="receptionistActor" value="Receptionist&#10;(Lễ Tân)" style="shape=umlLollipop;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="340" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepEdge1" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" parent="1" source="receptionistActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepUC1" value="Manage Appointments" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="155" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepEdge2" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="receptionistActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepUC2" value="Register Patient" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="185" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepEdge3" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" parent="1" source="receptionistActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="recepUC3" value="Process Billing" style="text;html=1;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="45" y="215" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="physicianActor" value="Physician&#10;(Bác Sĩ)" style="shape=umlLollipop;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="175" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="physEdge1" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=0;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.3;entryDx=0;entryDy=0;" parent="1" source="physicianActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="physUC1" value="View Patient History" style="text;html=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="185" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="physEdge2" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="physicianActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="physUC2" value="Record Consultation" style="text;html=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="215" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="physEdge3" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" parent="1" source="physicianActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="physUC3" value="Create Prescription" style="text;html=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="245" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="adminActor" value="System Admin" style="shape=umlLollipop;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="45" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="adminEdge" style="edgeStyle=elbowEdgeStyle;html=1;endArrow=block;endFill=1;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="adminActor" target="systemBoundary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="adminUC" value="Configure System" style="text;html=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="130" width="120" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

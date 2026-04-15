@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__zunef-smart-filesystem__view_many_files",
+      "mcp__zunef-smart-filesystem__view_file",
+      "WebFetch(domain:github.com)",
+      "mcp__zunef-web-browser__search_web",
+      "mcp__zunef-web-browser__browse_page"
+    ]
+  }
+}
