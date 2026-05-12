@@ -1,0 +1,21 @@
+Context Diagram (Sơ đồ ngữ cảnh)
+Sơ đồ ngữ cảnh dưới đây xác định ranh giới của hệ thống và các tác nhân bên ngoài (External Entities) tương tác với nó.
+
+Các thực thể ngoài (External Entities):
+Chủ trại (Owner/Admin):
+
+Dữ liệu gửi đến hệ thống: Thông tin thiết lập hệ thống, phân quyền người dùng, định mức chăn nuôi, cấu hình lứa gà mới.
+
+Dữ liệu nhận từ hệ thống: Các báo cáo thống kê tổng hợp, biểu đồ tăng trưởng, báo cáo lợi nhuận và lịch sử hoạt động của hệ thống.
+
+Nhân viên chăn nuôi (Worker):
+
+Dữ liệu gửi đến hệ thống: Nhật ký chăn nuôi hàng ngày (số gà chết, số trứng), báo cáo tiêu thụ thức ăn, thông báo tình trạng sức khỏe/dịch bệnh.
+
+Dữ liệu nhận từ hệ thống: Lịch làm việc trong ngày, danh sách kiểm tra (checklist) tiêm phòng vaccine, cảnh báo vật tư sắp hết.
+
+Kế toán (Accountant):
+
+Dữ liệu gửi đến hệ thống: Chứng từ thu/chi, thông tin nhập kho từ nhà cung cấp, dữ liệu chấm công, hóa đơn bán hàng.
+
+Dữ liệu nhận từ hệ thống: Báo cáo tồn kho thực tế, bảng tính lương, danh sách công nợ khách hàng/đại lý.

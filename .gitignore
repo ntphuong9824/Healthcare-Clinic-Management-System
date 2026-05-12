@@ -1,0 +1,39 @@
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OMC & Claude
+.omc/
+.claude/skills/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Node modules (if applicable)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python (if applicable)
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+
+# Build artifacts
+dist/
+build/
+*.log
+
+# OS specific
+Thumbs.db
+.DS_Store
+
